@@ -1,0 +1,48 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+h1 {
+   text-align: center;
+   color: #819FF7;
+   padding: 10px;
+   font-family: 'Coiny', cursive;
+}
+.nav {
+    background-color: #FAFAFA;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+}
+.navbar {
+    display: inline-flex;
+    list-style: none;
+    padding: 10px;}
+    
+.navbar li {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 40px;
+    color: grey;
+    }
+
+form {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    
+}    
+#button {
+    width: 65px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #819FF7;
+    opacity: 0.5;
+}
+#feed {
+    display: flex;
+    justify-content: center;
+}
