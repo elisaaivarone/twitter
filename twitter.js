@@ -5,7 +5,7 @@ document.querySelector('#button').addEventListener('click', tweetar)
 
 function tweetar(event) {
     event.preventDefault();
-    var post = document.createElement('p');
+    let post = document.createElement('p');
     post.innerHTML = message.value;
     document.querySelector('#feed').appendChild(post);
     message.value = "";
@@ -14,7 +14,7 @@ function tweetar(event) {
 document.querySelector ('#message').addEventListener("input", caracter);
 button.disabled = true;
 function maxCaracter() {
-    var button = document.querySelector('#button');
+    let button = document.querySelector('#button');
     if (message.value ==='' || message.value.length > 140) {
         button.disabled = true;
       } else {
@@ -22,9 +22,9 @@ function maxCaracter() {
       }
     }
     function caracter() {
-        var max = 140;
-        var msg = document.getElementById('message').value.length;
-        var counter = max - msg;
+        let max = 140;
+        let msg = document.getElementById('message').value.length;
+        let counter = max - msg;
         document.getElementById('contagem').innerHTML=counter;
     if (counter > 20){
             message.style.color= "#424242";
@@ -37,3 +37,11 @@ function maxCaracter() {
       }
     
     }
+    
+    document.querySelector('#message').addEventListener('keyup', autoSize)
+
+    function autoSize(event) {
+      let size = message.value.split('\n');
+       message.setAttribute('rows', size.length); 
+}
+

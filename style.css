@@ -16,7 +16,7 @@ h1 {
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid #bbb;
-    border-top: 1px solid #bbb;
+   
 }
 .navbar {
     display: inline-flex;
@@ -28,14 +28,24 @@ h1 {
     padding-left: 40px;
     color: #848484;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }    
+a :hover{
+    background-color: #848484;
+}
 .fas, .far {
     font-size: 25px;
     color: #819FF7;
 }
+#perfil2{
+    width: 50px;
+    height: 50px;
+    padding-left: 500px;
+}
+
 /*Perfil*/
 .perfil{
     margin-top: 20px;
@@ -44,11 +54,9 @@ a {
     padding: 40px;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 /* Escrever mensagens */
-
 .txtMessage {
     margin-top: 20px;
     margin-left: 50px;
@@ -59,14 +67,13 @@ a {
     vertical-align: top; 
     width: 600px;
     height: 800px;
-    border: 1px solid #bbb;
     background-color: #FFFFFF;
-    
-    
-}   
+} 
+
 #message{
     border-radius: 10px;
 } 
+
 #button {
     display: block;
     background-color: #819FF7;
@@ -76,15 +83,13 @@ a {
     border-radius: 5px;
     font-size: 15px;
     padding: 5px 10px;
-    
 }
+
 #counter {
     display: flex;
-    
 }
 
 /*Feed*/
-
 #feed {
     
     display: flex;
@@ -95,5 +100,4 @@ a {
     font-family: 'Coiny', cursive;
     font-size: 25px;
     color: #848484;
-
 }
