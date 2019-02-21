@@ -5,6 +5,7 @@
 Neste desafio, vamos replicar o feed de notícias do Twitter, seguindo um fluxo de versões.
 
 
+
 Versão 0.0.1
 
 1 - Crie um formulário que permita inserir um texto e um botão para "twittar".
@@ -16,11 +17,14 @@ Versão 0.0.1
 4 - Adicione o texto ao HTML.
 
 
+
 Versão 0.0.2
 
 1 - Não inserir texto vazio (desativar o botão "twittar").
 
 2 - Conte o número de caracteres de forma regressiva.
+
+
 
 Versão 0.0.3
 
@@ -31,6 +35,7 @@ Versão 0.0.3
 3 - Se você passar os 130 caracteres, mostre o contador com outra cor.
 
 4 - Se você passar os 140 caracteres, mostre o contador em negativo.
+
 
 
 Versão 0.0.4
