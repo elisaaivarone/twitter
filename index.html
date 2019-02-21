@@ -6,34 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Coiny|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila:500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Twitter</title>
 </head>
 <header>
-        <h1>Twitter</h1>
-    <section>
-        <nav class="nav">
-            <ul class="navbar">
-                <li>Pagina Inicial</li>
-                <li>Moments</li>
-                <li>Notificações</li>
-                <li>Mensagens</li>
-            </ul>
-        </nav>
+    <h1>Twitter</h1>
+
+    <nav class="nav">
+        <ul class="navbar">
+            <li class="menu"><a href=""><i class="fas fa-home"></i>Página Inicial</a></li>
+            <li class="menu"><a href=""><i class="fas fa-bolt"></i></i>Moments</a></li>
+            <li class="menu"><a href=""><i class="far fa-bell"></i>Notificações</a></li>
+            <li class="menu"><a href=""><i class="far fa-envelope"></i>Mensagens</a></li>
+        </ul>
+    </nav>
 </header>
-</section>
 
 <body>
-    <section class="message">
-        <form>
-            <textarea type="submit" id="message" cols="60" rows="3" placeholder="O que está acontecendo?"></textarea>
-            <button id="button" type="submit">Tweetar</button>
-        </form>
-    </section>
-    <section id="feed" ></section>
+    <aside class="perfil">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img width="250px" height="250px" src="image/avatar.png" alt="perfil">
+                        <p>Elisa Andrade</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@elisa_aivarone</td>
+                </tr>
+                <tr>
+                    <td>Brasil - Web Developer</td>
+                </tr>
+                <tr>
+                    <td>28 seguindo 17 seguidores</td>
+                </tr>
 
+
+            </tbody>
+        </table>
+    </aside>
+
+
+    <main class="txtMessage">
+        <form>
+            <textarea onclick="maxCaracter();" onkeypress="maxCaracter();" type="submit" id="message" cols="60" rows="3"
+                placeholder="O que está acontecendo?"></textarea>
+            <input type="submit" value="Tweetar" id="button" />
+            <div id="contagem"></div>
+            <p id="feed"></p>
+        </form>
+    </main>
+   
 
 
     <script src="twitter.js"></script>

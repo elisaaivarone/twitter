@@ -1,16 +1,18 @@
 body {
     margin: auto;
     width: 100%;
+    background-color: #EFF5FB;
 }
-
+/* header*/
 h1 {
    text-align: center;
    color: #819FF7;
    padding: 10px;
    font-family: 'Coiny', cursive;
 }
+/*Navegador*/
 .nav {
-    background-color: #FAFAFA;
+    background-color: #FFFFFF;
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid #bbb;
@@ -19,30 +21,79 @@ h1 {
 .navbar {
     display: inline-flex;
     list-style: none;
-    padding: 10px;}
-    
+    padding: 10px;
+}
 .navbar li {
     font-family: 'Montserrat', sans-serif;
     padding-left: 40px;
-    color: grey;
-    }
-
-form {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    
-}    
-#button {
-    width: 65px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 12px;
-    background-color: #819FF7;
-    opacity: 0.5;
+    color: #848484;
 }
-#feed {
+a {
+    text-decoration: none;
+    color: inherit;
+}    
+.fas, .far {
+    font-size: 25px;
+    color: #819FF7;
+}
+/*Perfil*/
+.perfil{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #819FF7;
+    padding: 40px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* Escrever mensagens */
+
+.txtMessage {
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-left: 70px;
+    display: inline-flex;
+    justify-content: center;   
+    vertical-align: top; 
+    width: 600px;
+    height: 800px;
+    border: 1px solid #bbb;
+    background-color: #FFFFFF;
+    
+    
+}   
+#message{
+    border-radius: 10px;
+} 
+#button {
+    display: block;
+    background-color: #819FF7;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    border: 2px solid #819FF7;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 10px;
+    
+}
+#counter {
     display: flex;
-    justify-content: center;
+    
+}
+
+/*Feed*/
+
+#feed {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: top;
+    font-family: 'Coiny', cursive;
+    font-size: 25px;
+    color: #848484;
+
 }
