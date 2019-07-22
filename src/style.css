@@ -1,0 +1,145 @@
+body {
+  margin: auto;
+  width: 100%;
+  background-color: #EFF5FB;
+}
+
+/* header*/
+h1 {
+  text-align: center;
+  color: #819FF7;
+  padding: 10px;
+  font-family: 'Coiny', cursive;    
+}
+
+/*Navegador*/
+.nav {
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 100%;  
+  border-bottom: 1px solid #bbb;
+   
+}
+.navbar {
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.navbar li {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 40px;
+  color: #848484;
+}
+
+li, a {
+  text-decoration: none;
+  color: inherit;
+}    
+li :hover{
+  color: #819FF7;
+}
+.fas, .far {
+  font-size: 25px;
+  color: #848484;
+}
+#perfil2{
+  width: 50px;
+  height: 50px;
+  padding-left: 500px;
+}
+
+/*Perfil*/
+.perfil{
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #819FF7;
+  padding: 40px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Caracter color*/
+.yellow {
+    color: #d8db1f;
+}
+.red {
+    color:#8A0808;
+}
+
+.black {
+    color:#0f0f0f;
+}
+/*Timeline*/
+.b-radius{
+  border-radius: 0.35rem;
+}
+.main, .feed {
+  width:70%;
+  display: inline-block;
+  vertical-align: top; 
+}
+.msg-box{  
+  background-color: #819FF7;
+  box-shadow: 3px 6px 10px #504f4f65;
+  text-align: right;
+  width: 50%;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.message-txt{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: inset 5px 4px 10px #6d6c6c65;
+  border: 2px solid #A3BED8;
+  resize: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  height: auto;
+  width: 95%;
+}
+.counter{
+  font-weight: 700;
+  display: inline-flex;
+  font-size: 0.8rem;
+  text-align: right;
+  margin: 0px;
+}
+.post{
+  margin-left: 3rem;
+  width: 60%;
+  font-family: 'Coiny', cursive; 
+  flex-direction: column-reverse;
+}
+.post li{
+  box-shadow: 5px 4px 10px #6d6c6c65;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0rem 1rem 1rem 1rem;
+  word-wrap: break-word;
+  margin-bottom: 0.2rem;
+}
+.btn{
+  font-weight: 700;
+  display: inline-flex;
+  font-size: 1rem;
+  color: #fffefe;
+  background-color: #363636;
+  cursor: pointer;
+  border: none;
+  box-shadow: 3px 6px 10px #504f4f65;
+  padding: 0.25rem 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.btn:disabled{
+  background-color: #A4A7AC;
+  cursor: auto;
+}
+
+
+

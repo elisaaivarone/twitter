@@ -2,69 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Coiny|Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Laila:500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Twitter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Coiny|Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+crossorigin="anonymous">
+<link href="src/style.css" rel="stylesheet" type="text/css" />
+<title>Twitter</title>
 </head>
-<header>
-    <h1>Twitter</h1>
 
-    <nav class="nav">
-        <ul class="navbar">
-            <li class="menu"><a href=""><i class="fas fa-home"></i>Página Inicial</a></li>
-            <li class="menu"><a href=""><i class="fas fa-bolt"></i></i>Moments</a></li>
-            <li class="menu"><a href=""><i class="far fa-bell"></i>Notificações</a></li>
-            <li class="menu"><a href=""><i class="far fa-envelope"></i>Mensagens</a></li>
-        </ul>
-        <img id="perfil2" src="image/avatar.png" alt="perfil">
-    </nav>
+<header>
+  <h1>Twitter</h1>
+
+<nav class="nav">
+  <ul class="navbar">
+    <li class="menu"><a href=""><i class="fas fa-home"></i>Página Inicial</a></li>
+    <li class="menu"><a href=""><i class="fas fa-bolt"></i></i>Moments</a></li>
+    <li class="menu"><a href=""><i class="far fa-bell"></i>Notificações</a></li>
+    <li class="menu"><a href=""><i class="far fa-envelope"></i>Mensagens</a></li>
+  </ul>
+    <img id="perfil2" src="src/image/avatar.png" alt="perfil">
+</nav>
 </header>
 
 <body>
-    <aside class="perfil">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <img width="250px" height="250px" src="image/avatar.png" alt="perfil">
-                        <p>Elisa Andrade</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>@elisa_aivarone</td>
-                </tr>
-                <tr>
-                    <td>Brasil - Web Developer</td>
-                </tr>
-                <tr>
-                    <td>28 seguindo 17 seguidores</td>
-                </tr>
+  <aside class="perfil">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img width="250px" height="250px" src="src/image/avatar.png" alt="perfil">
+            <p>Elisa Andrade</p>
+            </td>
+        </tr>
+        <tr>
+          <td>@elisa_aivarone</td>
+        </tr>
+        <tr>
+          <td>Brasil - Web Developer</td>
+        </tr>
+        <tr>
+          <td>28 seguindo 17 seguidores</td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+  
+  <container class="main">
+    <section class="msg-box b-radius">
+      <form>
+        <textarea type="submit" id="twitterText" class="message-txt b-radius" cols="60" rows="3"placeholder="O que está acontecendo?"></textarea>
+        <span id="twitterCount" class="black counter">140</span>
+        <input type="submit" value="Tweet" class="btn b-radius" id="button" disabled value="Tweet"/>
+      </form>
+    </section>
 
+    <section class="feed">
+      <ul id="twitterPost" class="post">
+      </ul>
+    </section>
+    </container>
 
-            </tbody>
-        </table>
-    </aside>
-
-
-    <main class="txtMessage">
-        <form>
-            <textarea onclick="maxCaracter();" onkeypress="maxCaracter();" type="submit" id="message" cols="60" rows="3"
-                placeholder="O que está acontecendo?"></textarea>
-            <input type="submit" value="Tweetar" id="button" />
-            <div id="contagem"></div>
-            <p id="feed"></p>
-        </form>
-    </main>
-
-
-
-    <script src="twitter.js"></script>
+        
+<script src="src/twitter.js"></script>
 </body>
 
 </html>
